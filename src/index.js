@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'styles/style.scss';
-import $ from 'jquery';
 import 'slick-carousel';
 import reportWebVitals from './reportWebVitals';
 import "slick-carousel/slick/slick.css";
