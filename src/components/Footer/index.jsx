@@ -1,4 +1,7 @@
+// Core
 import React from 'react';
+
+//Components
 import { Form } from 'components/Form';
 
 export const Footer = () => {

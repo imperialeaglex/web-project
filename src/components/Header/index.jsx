@@ -1,3 +1,7 @@
+// Core
+import React from 'react';
+
+// Components
 import { Menu } from 'components/Menu';
 import { Video } from 'components/Video';
 

@@ -1,6 +1,7 @@
+// Core
 import React from 'react';
 
-export const Expertise = ({title}) => {
+export const Expertise = ({ title }) => {
   return (
     <div className="col-sm-6 col-xs-12 expertise-col">
       <div className="expertise-item">

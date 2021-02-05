@@ -8,6 +8,10 @@ html, body {
 }
 
 body {
+  overflow-y: hidden;
+}
+
+body {
   font-family: "Montserrat", system-ui, BlinkMacSystemFont,
   "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
@@ -377,7 +381,7 @@ video {
   z-index: 5;
 }
 
-.with-expertise .advantages-row {
+.advantages-row {
   margin-bottom: -212px;
 }
 
@@ -1105,10 +1109,9 @@ video {
 }
 
 .slick-slider {
-  width: 64%;
+  width: 100%;
   float: left;
   padding-right: 60px;
-  border-right: 1px solid #cdcdcd;
   padding: 14px 60px;
 }
 
@@ -1159,7 +1162,6 @@ video {
 }
 
 .slide {
-  width: 462px !important;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.2;
@@ -1276,7 +1278,8 @@ footer {
   font-family: Montserrat;
   margin-top: 45px;
   border-top: 1px solid #e5e5e5;
-  height: 900px;
+  height: auto;
+  min-height: 900px;
 }
 
 footer .container {

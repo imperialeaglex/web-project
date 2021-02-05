@@ -1,5 +1,10 @@
+// Core
 import React from 'react';
+
+// Components
 import { Expertise } from 'components/Expertise';
+
+// Assets
 import img from 'assets/laptop.png';
 
 export const Expertises = () => {
@@ -8,11 +13,11 @@ export const Expertises = () => {
     'Только Drupal сайты, не берем на поддержку сайты на других CMS!',
     'Участвуем в разработке ядра Drupal и модулей на Drupal.org, разрабатываем модули Drupal',
     'Поддерживаем сайты на Drupal 5, 6, 7 и 8'
-  ]
+  ];
 
-  const expertisesJSX = titles.map((title) => (
-    <Expertise title={title}/>
-  ))
+  const expertisesJSX = titles.map((title, i) => (
+    <Expertise title={title} key={i}/>
+  ));
 
   return (
     <div className="expertise">

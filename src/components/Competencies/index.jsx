@@ -1,5 +1,10 @@
-import Reac from 'react';
+// Core
+import React from 'react';
+
+// Components
 import { Competency } from '../Competency';
+
+// Assets
 import img1 from '../../assets/competencies/competency-1.svg';
 import img2 from '../../assets/competencies/competency-2.svg';
 import img3 from '../../assets/competencies/competency-3.svg';
@@ -40,7 +45,7 @@ export const Competencies = () => {
   ];
 
   const CompetenciesJSX = descriptions.map((description, i) => (
-    <Competency description={description}>
+    <Competency description={description} key={i}>
       <img src={images[i]} className="img-responsive" alt="1"/>
     </Competency>
   ));

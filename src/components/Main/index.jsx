@@ -1,4 +1,7 @@
+// Core
 import React from 'react';
+
+// Components
 import { Competencies } from 'components/Competencies';
 import { Advantages } from 'components/Advantages';
 import { Expertises } from 'components/Expertises';
@@ -28,6 +31,5 @@ export const Main = () => {
         </div>
       </div>
     </div>
-  )
-    ;
+  );
 };

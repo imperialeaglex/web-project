@@ -1,3 +1,4 @@
+// Core
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -31,7 +32,7 @@ export const Form = () => {
     if (!checked) {
       errorsArr.push('Вы должны принять условия');
     }
-  }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -51,21 +52,22 @@ export const Form = () => {
         setLoading(false);
       })
       .catch((error) => {
-        setLoading(false);;
+        setLoading(false);
+        ;
       });
   };
 
   const errorsJSX = errors.map((error) => {
     return (
       <p className='error-custom'>{error}</p>
-    )
-  })
+    );
+  });
 
   return (
     <div className="col-md-6 col-xs-12 col-sm-6 ma">
       {errorsJSX}
       <form method="POST"
-            accept-charset="UTF-8"
+            acceptCharset="UTF-8"
             id="my-formcarry"
             className="contact-form"
       >
@@ -128,10 +130,7 @@ export const Form = () => {
             своих персональных данных</a><i className="red"> * </i>
           </label>
         </div>
-        <iframe
-          src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Le7ciYUAAAAAALNHRR_GYgiOXgsH8EX9GbvQ42y&amp;co=aHR0cHM6Ly9kcnVwYWwtY29kZXIucnU6NDQz&amp;hl=ru&amp;type=image&amp;v=qc5B-qjP0QEimFYUxcpWJy5B&amp;theme=dark&amp;size=normal&amp;cb=ruwyzhxi7lnz"
-          width="306" height="83" role="presentation" name="a-i1p58kpiq2ew">
-        </iframe>
+        <div className="g-recaptcha" data-sitekey="6Lc0B0saAAAAAJoeKPGY0-pZzkd9HKpc9wjmqCz7"></div>
         <div className="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions">
           <button className="button button--primary js-form-submit form-submit btn-primary btn"
                   type="submit"

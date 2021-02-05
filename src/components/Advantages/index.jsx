@@ -1,6 +1,10 @@
+// Core
 import React from 'react';
+
+// Components
 import { Advantage } from 'components/Advantage';
 
+// Assets
 import img1 from 'assets/advantages/support1.svg';
 import img2 from 'assets/advantages/support2.svg';
 import img3 from 'assets/advantages/support3.svg';
@@ -31,18 +35,18 @@ export const Advantages = () => {
     'Работа в рамках соглашений конфеденциальности и об уровне качества работ.',
     'Надежные штатные специалисты, никаких фрилансеров.',
     'Консультации по телефону, скайпу, мессенджерах.'
-  ]
+  ];
 
-  const images = [img1,img2, img3, img4, img5, img6, img7, img8];
+  const images = [img1, img2, img3, img4, img5, img6, img7, img8];
 
   const advantagesJSX = titles.map((title, i) => (
-    <Advantage number={i + 1} title={title} body={bodies[i]}>
+    <Advantage number={i + 1} title={title} body={bodies[i]} key={i}>
       <img src={images[i]} className="img-responsive" alt="#"/>
     </Advantage>
   ));
 
   return (
-    <div className="advantages with-expertise">
+    <div className="advantages">
       <div className="container">
         <div className="row">
           <div className="col-md-12">

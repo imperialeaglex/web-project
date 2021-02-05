@@ -26,7 +26,7 @@ export const Team = () => {
   ];
 
   const personJSX = names.map((name, i) => (
-    <Person name={name} description={descriptions[i]}>
+    <Person name={name} description={descriptions[i]} key={i}>
       <img src={images[i]} width="280" height="280" className="img-responsive" alt="#"/>
     </Person>
   ));

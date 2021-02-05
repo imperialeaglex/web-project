@@ -14,7 +14,7 @@ export const Reviews = () => {
   const images = [img1, img2, img3, img4, img5, img6, img7, img8]
 
   const settings = {
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -59,10 +59,10 @@ export const Reviews = () => {
     <p>Дмитрий Новиков,
       <a href="http://www.cielparfum.com/" tabIndex="0" className="mapp">lpcma.tsu.ruу</a>
     </p>
-  ]
+  ];
 
   const reviewsJSX = contents.map((content, i) => (
-    <Review content={content} description={descriptions[i]} className="slick">
+    <Review content={content} description={descriptions[i]} className="slick" key={i}>
       <img src={images[i]} alt="#" width="100" height="50"/>
     </Review>
   ));

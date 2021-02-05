@@ -1,3 +1,7 @@
+// Core
+import React from 'react';
+
+// Assets
 import logo from 'assets/logo.svg';
 
 export const Menu = () => {
